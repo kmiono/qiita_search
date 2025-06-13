@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http; // httpという変数を通して、httpパッケージにアクセス
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:qiita_search/models/article.dart';
+import 'package:qiita_search/widgets/article_container.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -40,6 +41,7 @@ class _SearchScreenState extends State<SearchScreen> {
               },
             ),
           ),
+          const ArticleContainer(),
         ],
       ),
     );
